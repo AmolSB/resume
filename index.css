@@ -5,9 +5,10 @@
 
 .name {
   color: #474eac;
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700 !important;
 }
+
 
 .job-title,
 .company-name,
@@ -27,7 +28,9 @@
 .technologies-header,
 .education-header,
 .achievements-header,
-.research-header {
+.research-header,
+.languages-header,
+.additional-header {
   color: #474eac;
   padding-bottom: 8px;
   border-bottom: 5px solid #474eac;
@@ -71,7 +74,8 @@ i {
 
 .development span,
 .project-management-tools span,
-.development-tools span {
+.development-tools span,
+.languages-known span {
   padding: 0.5rem;
   margin: 3px 5px;
   font-weight: 600;
