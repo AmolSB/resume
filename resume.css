@@ -1,0 +1,70 @@
+.resume-header {
+    font-family: "Bitter", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
+}
+
+
+.name {
+    color: #474EAC;
+    font-size: 42px;
+    font-weight: 700!important;
+}
+
+.job-title, .company-name {
+    font-size: 21px;
+    font-weight: 700!important;
+    color: #FF8490
+}
+
+.contact .fab, .contact .fas {
+    color: #FF8490;
+}
+
+.experience-header, .summary-header, .technologies-header {
+    color: #474EAC;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #474EAC;
+}
+
+.work-profile {
+    color: #474EAC;
+    font-size: 27px;
+    font-family: Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
+}
+
+.company-name {
+    font-size: 18px;
+}
+
+i {
+    margin-right: 6px;
+}
+
+.projects-experience-heading {
+    font-size: 23px;
+    color: #474EAC;
+    font-weight: 400px;
+}
+
+.project-title {
+    color: #474EAC;
+    font-size: 20px;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    border-bottom: 1px dashed lightgray;
+    margin: 1rem 0;
+}
+
+.development span, .project-management-tools span, .development-tools span {
+    padding: 8px;
+    margin: 3px 5px;
+    font-weight: 600;
+}  
+
+.coding>p, .project-management>p, .tools>p {
+    color: #FF8490;
+    font-size: 23px;
+    margin-bottom: 5px;
+}   
