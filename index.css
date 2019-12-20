@@ -1,19 +1,48 @@
+
+
+body * {
+  font-size: 16px;
+}
+
+.contact a {
+  font-size: 14px;
+}
+
+.pr-8 {
+  padding-right: 8%;
+}
+
+.resume {
+  width: 67vw;
+  margin: 5rem auto 0;
+  background: url('background.svg') no-repeat;
+}
+
 .resume-header {
   font-family: "Bitter", Arial, Helvetica, "Noto Sans Devanagari",
     "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
 }
 
+.header-border{
+  /* width: 92%; */
+  border-bottom: 4px solid #474eac;
+}
+
 .name {
   color: #474eac;
-  font-size: 35px;
+  font-size: 34px;
   font-weight: 700 !important;
+}
+
+section>h3{
+  margin-bottom: 0;
 }
 
 
 .job-title,
 .company-name,
 .college-name {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700 !important;
   color: #ff8490;
 }
@@ -30,15 +59,16 @@
 .achievements-header,
 .research-header,
 .languages-header,
-.additional-header {
+.certifications-header {
   color: #474eac;
   padding-bottom: 8px;
-  border-bottom: 5px solid #474eac;
+  /* border-bottom: 5px solid #474eac; */
+  font-size: 24px;
 }
 
 .work-profile {
   color: #474eac;
-  font-size: 24px;
+  font-size: 22px;
   font-family: Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin",
     "Noto Sans SC", "Noto Sans Hebrew", sans-serif !important;
 }
@@ -53,16 +83,16 @@ i {
 }
 
 .projects-experience-heading,
-.degree,
-.research-paper-name {
-  font-size: 23px;
+.degree {
+  font-size: 21px;
   color: #474eac;
-  font-weight: 400px;
+  font-weight: 500;
 }
 
-.project-title {
+.project-title, .research-paper-name {
   color: #474eac;
-  font-size: 20px;
+  font-size: 18px;
+  /* font-weight: 500;; */
 }
 
 .divider {
@@ -77,21 +107,30 @@ i {
 .development-tools span,
 .languages-known span {
   padding: 0.5rem;
-  margin: 3px 5px;
+  /* margin: 3px 5px; */
+  margin-right: 6px;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .coding > p,
 .project-management > p,
 .tools > p {
   color: #ff8490;
-  font-size: 23px;
-  margin-bottom: 5px;
+  font-size: 21px;
+  margin-bottom: 2px;
 }
 
 .inline-lead-text {
   color: #474eac;
   font-weight: 400;
   font-size: 18px;
+}
+
+.date, .location {
+  font-size: 14px;
+}
+
+.reset-justification {
+  text-align: initial;
 }
