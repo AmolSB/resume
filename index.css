@@ -43,7 +43,7 @@ section>h3{
 .company-name,
 .college-name {
   font-size: 19px;
-  font-weight: 700 !important;
+  font-weight: 700;
   color: #ff8490;
 }
 
@@ -91,7 +91,7 @@ i {
 
 .project-title, .research-paper-name {
   color: #474eac;
-  font-size: 18px;
+  font-size: 20px;
   /* font-weight: 500;; */
 }
 
@@ -133,4 +133,13 @@ i {
 
 .reset-justification {
   text-align: initial;
+}
+
+.reset-font-weight {
+  font-weight: 500;
+}
+
+.course-name {
+  font-size: 20px;
+  color: #474eac;
 }
