@@ -175,9 +175,11 @@
               <h3 class="research-header">RESEARCH AND PROJECTS</h3>
               <div class="header-border mb-4 rounded"></div>
               <p class="projects-experience-heading">Reasearch</p>
-              <a target="_blank" href="https://pdfs.semanticscholar.org/838c/2791ec84a6a89e5d068a3463c30b4c0764aa.pdf" class="research-paper-name ">
-                User Authentication Through Keystroke Dynamics
-              </a>
+              <div class="shake mb-3">
+                <a target="_blank" onClick="removeShakeEffect(event)" href="https://pdfs.semanticscholar.org/838c/2791ec84a6a89e5d068a3463c30b4c0764aa.pdf" class="certificate-link research-paper-name ">
+                  User Authentication Through Keystroke Dynamics
+                </a>
+              </div>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam qui aut eius alias modi mollitia quo ducimus, minus
@@ -187,9 +189,11 @@
               <p class="projects-experience-heading">Projects</p>
               <div class="project" id="project-4">
                 <div class="d-flex mb-1 justify-content-between">
-                  <a href="https://amolsb.github.io/memorygame/" class="project-title mb-1">
-                    Memory Game
-                  </a>
+                  <div class="shake">
+                    <a onClick="removeShakeEffect(event)" target="_blank" href="https://amolsb.github.io/memorygame/" class="project-title mb-1">
+                      Memory Game
+                    </a>
+                  </div>
                   <span class="date"
                     ><i class="far fa-calendar-alt"></i>11/2015-04/2016</span class="date"
                   >
@@ -207,9 +211,30 @@
               </div>
               <div class="project" id="project-4">
                 <div class="d-flex mb-1 justify-content-between">
-                  <a href="https://amolsb.github.io/arcade-game/" class="project-title mb-1">
+                  <a target="_blank" href="https://amolsb.github.io/arcade-game/" class="project-title mb-1">
                     Frogger Game
                   </a>
+                  <span class="date"
+                    ><i class="far fa-calendar-alt"></i>11/2015-04/2016</span class="date"
+                  >
+                </div>
+                <ul>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum, pariatur.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta, doloribus?
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project" id="project-4">
+                <div class="d-flex mb-1 justify-content-between">
+                  <p class="project-title mb-1">
+                    Neighborhood Map
+                  </p>
                   <span class="date"
                     ><i class="far fa-calendar-alt"></i>11/2015-04/2016</span class="date"
                   >
@@ -384,7 +409,9 @@
 
                 <p class="projects-experience-heading">Udacity Nanodegree</p>
                 <div class="d-flex justify-content-between align-items-end mb-3">
-                  <button data-toggle="modal" data-target="#nanodegreeCertificate" class="certificate-link research-paper-name reset-justification mb-0 col-md-8 px-0 ">Front-end Developer</button>
+                  <div class="shake">
+                    <button onClick="removeShakeEffect(event)" style="max-width: 100%;" data-toggle="modal" data-target="#nanodegreeCertificate" class="certificate-link research-paper-name reset-justification mb-0 col-md-8 px-0 ">Front-end Developer</button>
+                  </div>
                   <div id="nanodegreeCertificate" class="modal fade" tabindex="-1" role="dialog">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -401,7 +428,7 @@
                 <p class="projects-experience-heading">Courses</p>
 
                 <div id="course-1" class="mb-4">
-                  <button data-target="#oopJava" data-toggle="modal" class="certificate-link course-name reset-justification mb-1">Object Oriented Programming in Java</button>
+                  <button onClick="removeShakeEffect(event)" data-target="#oopJava" data-toggle="modal" class="shake certificate-link course-name reset-justification mb-1">Object Oriented Programming in Java</button>
                   <div id="oopJava" class="modal fade" tabindex="-1" role="dialog">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -515,5 +542,16 @@
   
     </div>
     
+    <script>
+      var shakyElement = [...document.getElementsByClassName('shake')];
+      
+      function removeShakeEffect(event) {
+        console.log(event)
+        // event.preventDefault();
+        shakyElement.forEach(e => e.classList.remove('shake'));
+      }
+
+    </script>
+
   </body>
 </html>
