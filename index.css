@@ -38,6 +38,25 @@ section>h3{
   margin-bottom: 0;
 }
 
+.certificate-link {
+  border: none;
+  background: initial;
+  outline: none !important;
+  padding: 0;
+}
+
+.certificate-link:hover {
+  text-decoration: underline;
+}
+
+/* .modal-dialog {
+  width: 70vw;
+  height: 70vh;
+} */
+
+.modal-dialog {
+  max-width: 70%;
+}
 
 .job-title,
 .company-name,

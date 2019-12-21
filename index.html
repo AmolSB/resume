@@ -17,6 +17,9 @@
       src="https://kit.fontawesome.com/f929bfe86a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Amol Borgaonkar</title>
   </head>
 
@@ -172,9 +175,9 @@
               <h3 class="research-header">RESEARCH AND PROJECTS</h3>
               <div class="header-border mb-4 rounded"></div>
               <p class="projects-experience-heading">Reasearch</p>
-              <p class="research-paper-name ">
+              <a target="_blank" href="https://pdfs.semanticscholar.org/838c/2791ec84a6a89e5d068a3463c30b4c0764aa.pdf" class="research-paper-name ">
                 User Authentication Through Keystroke Dynamics
-              </p>
+              </a>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam qui aut eius alias modi mollitia quo ducimus, minus
@@ -292,10 +295,14 @@
               <section class="achievements mb-5">
                 <h3 class="achievements-header">ACHIEVEMENTS</h3>
                 <div class="header-border mb-4 rounded"></div>
-                <p><span class="inline-lead-text mb-3">Insta Award</span></p>
-                <p>
-                  <span class="inline-lead-text">Game Development Challange</span>
-                </p>
+                <button data-toggle="modal" data-target="#instaAward" class="certificate-link research-paper-name reset-justification mb-0 col-md-8 px-0 ">Insta Award</button>
+                <div id="instaAward" class="modal fade" tabindex="-1" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <img src="certificates/insta.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
               </section>
   
               
@@ -377,7 +384,14 @@
 
                 <p class="projects-experience-heading">Udacity Nanodegree</p>
                 <div class="d-flex justify-content-between align-items-end mb-3">
-                  <p class="research-paper-name reset-justification mb-0 col-md-8 px-0">Front-end Developer</p>
+                  <button data-toggle="modal" data-target="#nanodegreeCertificate" class="certificate-link research-paper-name reset-justification mb-0 col-md-8 px-0 ">Front-end Developer</button>
+                  <div id="nanodegreeCertificate" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <img src="certificates/nanodegree-1.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
                   <span class="date">
                     <i class="far fa-calendar-alt"></i>04/2018-05/2019</span
                     >
@@ -387,7 +401,14 @@
                 <p class="projects-experience-heading">Courses</p>
 
                 <div id="course-1" class="mb-4">
-                  <p class="course-name reset-justification mb-1">Object Oriented Programming in Java</p>
+                  <button data-target="#oopJava" data-toggle="modal" class="certificate-link course-name reset-justification mb-1">Object Oriented Programming in Java</button>
+                  <div id="oopJava" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <img src="certificates/oopjava-1.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
                   <div class="d-flex justify-content-between">
                     <span class="college-name reset-font-weight">UC San Diego</span>
                     <span> <i class="far fa-calendar-alt"></i>Jan 2016</span>
@@ -395,7 +416,14 @@
                 </div>
 
                 <div id="course-2" class="mb-4">
-                  <p class="course-name reset-justification mb-1">Introduction to Computer Science and Programming Using Python</p>
+                  <button data-target="#pythonMit" data-toggle="modal" class="certificate-link course-name reset-justification mb-1">Introduction to Computer Science and Programming Using Python</button>
+                  <div id="pythonMit" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <img src="certificates/python-mit-1.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
                   <div class="d-flex justify-content-between">
                     <span class="college-name reset-font-weight">MITx</span>
                     <span> <i class="far fa-calendar-alt"></i>Oct 2014</span>
@@ -403,7 +431,14 @@
                 </div>
 
                 <div id="course-3" class="mb-4">
-                  <p class="course-name reset-justification mb-1">Introduction to Linux</p>
+                  <button data-target="#linux" data-toggle="modal" class="certificate-link course-name reset-justification mb-1">Introduction to Linux</button>
+                  <div id="linux" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <img src="certificates/linux-1.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
                   <div class="d-flex justify-content-between">
                     <span class="college-name reset-font-weight">Linux Foundation</span>
                     <span> <i class="far fa-calendar-alt"></i>Aug 2014</span>
@@ -411,7 +446,15 @@
                 </div>
                 
                 <div id="course-4" class="mb-4">
-                  <p class="course-name reset-justification mb-1">Introduction to Bootstrap</p>
+                  <button data-target="#bootstrap-ms" data-toggle="modal" class="certificate-link course-name reset-justification mb-1">Introduction to Bootstrap</button>
+                  <div id="bootstrap-ms" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <img src="certificates/boostrap-microsoft.PNG" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="d-flex justify-content-between">
                     <span class="college-name reset-font-weight">Microsoft</span>
                     <span> <i class="far fa-calendar-alt"></i>Sep 2015</span>
@@ -471,5 +514,6 @@
       </div>
   
     </div>
+    
   </body>
 </html>
