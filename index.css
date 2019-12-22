@@ -46,7 +46,7 @@ section>h3{
 }
 
 .certificate-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
@@ -164,18 +164,25 @@ i {
   color: #474eac;
 }
 
-.shake {
-  animation: shake-animation 4.72s ease infinite;
-  transform-origin: 50% 50%;
+
+.zoom{
+  /* padding: 50px; */
+  /* background-color: green; */
+  transition: transform .2s; /* Animation */
+  /* width: 200px; */
+  /* height: 200px; */
+  /* margin: 0 auto; */
+  cursor: pointer;
+  text-decoration: none;
 }
 
-@keyframes shake-animation {
-   0% { transform:translate(0,0) }
-  1.78571% { transform:translate(5px,0) }
-  3.57143% { transform:translate(0,0) }
-  5.35714% { transform:translate(5px,0) }
-  7.14286% { transform:translate(0,0) }
-  8.92857% { transform:translate(5px,0) }
-  10.71429% { transform:translate(0,0) }
-  100% { transform:translate(0,0) }
+a.link-to-cert {
+  text-decoration: none;
+  color: initial;
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  text-decoration: none;
+  /* box-shadow: -1px 1px 7px 1px rgba(163,158,158,1); */
 }
