@@ -168,7 +168,7 @@ i {
 .zoom{
   /* padding: 50px; */
   /* background-color: green; */
-  transition: transform .2s; /* Animation */
+  /* transition: all .2s; */
   /* width: 200px; */
   /* height: 200px; */
   /* margin: 0 auto; */
@@ -182,7 +182,19 @@ a.link-to-cert {
 }
 
 .zoom:hover {
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: all .2s;
+  transform:  scale(1.04);
+  /* transform: translateZ(1%); */
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* will-change: transform, opacity; */
+  /* -webkit-font-smoothing: subpixel-antialiased; */
+  /* font-smoothing: subpixel-antialiased; */
+  /* backface-visibility: hidden; */
   text-decoration: none;
+  /* -webkit-perspective: 1000;
+  perspective: 1000; */
   /* box-shadow: -1px 1px 7px 1px rgba(163,158,158,1); */
+  /* perspective: none; */
+  /* filter: blur(0px); */
+  /* zoom: 1.05; */
 }
