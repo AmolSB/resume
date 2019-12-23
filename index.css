@@ -104,7 +104,7 @@ i {
 
 .projects-experience-heading,
 .degree {
-  font-size: 21px;
+  font-size: 22px;
   color: #474eac;
   font-weight: 500;
 }
@@ -197,4 +197,10 @@ a.link-to-cert {
   /* perspective: none; */
   /* filter: blur(0px); */
   /* zoom: 1.05; */
+}
+
+.lead {
+  font-size: 1.08rem;
+  color: #474eac;
+  font-weight: 400;
 }
