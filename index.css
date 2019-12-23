@@ -125,7 +125,8 @@ i {
 .development span,
 .project-management-tools span,
 .development-tools span,
-.languages-known span {
+.languages-known span,
+.hobbies-i-have span {
   padding: 0.5rem;
   /* margin: 3px 5px; */
   margin-right: 6px;
@@ -135,7 +136,9 @@ i {
 
 .coding > p,
 .project-management > p,
-.tools > p {
+.tools > p,
+.languages > p,
+.hobbies > p {
   color: #ff8490;
   font-size: 21px;
   margin-bottom: 2px;
