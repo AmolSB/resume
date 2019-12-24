@@ -13,8 +13,9 @@ body * {
 }
 
 .resume {
-  /* width: 75vw; */
+  width: 75vw;
   margin: 5rem auto 0;
+  padding-bottom: 5rem;
   background: url('background.svg') no-repeat;
 }
 
